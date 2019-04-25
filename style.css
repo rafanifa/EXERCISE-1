@@ -1,0 +1,115 @@
+ body {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 960px;
+        margin:0 auto;
+        padding: 1em;
+        font-size: 100%;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.875em;
+        line-height: 1.5;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 1px solid blue;
+      }
+      ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+      #header ul li {
+        display:inline-block;
+        padding: .5em;
+      }
+      #content{
+        width: 70%;
+        float: left;
+      }
+      #content section {
+        margin-top: 2em;
+        border-top: 2px solid #ccc;
+      }
+      #sidebar {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 30%;
+        float: right;
+        padding-left: 1em;
+      }
+      section h3+p {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1em;
+      }
+      section menu {
+        border-bottom: 1px solid #ccc;
+        line-height:normal;
+      }
+      #footer {
+        clear:both;
+        text-align:center;
+        padding-top: 1em;
+        }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #FADBD8;
+  font-family: "Open Sans", "Helvetica";
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  color: #B7977B;
+}
+main {
+  background: #FADBD8;
+  width: 500px;
+  margin: 50px auto;
+  padding: 10px 30px 80px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+p {
+  font-size: 13px;
+}
+
+/* Important code */
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #DDD;
+}
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5{
+  display: block;
+}
+input:checked + label {
+  border-top-color: #EB7373;
+  border-right-color: #EB7373;
+  border-left-color: #EB7373;
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
